@@ -1,7 +1,6 @@
 node_modules/
 libs/
 gh-pages/
-demo/
 .idea
 .DS_Store
 .idea
