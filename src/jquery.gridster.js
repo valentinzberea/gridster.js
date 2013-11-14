@@ -218,7 +218,7 @@
         size_y || (size_y = 1);
 
         if (!col & !row) {
-            pos = this.next_position(size_x, size_y);
+            pos = this.next_position_in_range(size_x, size_y, this.options.page_rows);
         }else{
             pos = {
                 col: col,
@@ -687,7 +687,7 @@
             !this.can_move_to(
              {size_x: wgd.size_x, size_y: wgd.size_y}, wgd.col, wgd.row)
         ) {
-            $.extend(wgd, this.next_position(wgd.size_x, wgd.size_y));
+            $.extend(wgd, this.next_position_in_range(wgd.size_x, wgd.size_y, this.options.page_rows));
             $el.attr({
                 'data-col': wgd.col,
                 'data-row': wgd.row,
