@@ -2870,10 +2870,7 @@
         var min_cols = Math.max.apply(Math, actual_cols);
 
         // get all rows that could be occupied by the current widgets
-        var max_rows = this.options.extra_rows;
-        this.$widgets.each(function(i, w) {
-            max_rows += (+$(w).attr('data-sizey'));
-        });
+        var max_rows = this.options.page_rows;
 
         this.cols = Math.max(min_cols, cols, this.options.min_cols);
 
