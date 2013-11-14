@@ -12,6 +12,8 @@
         widget_selector: 'li',
         widget_margins: [10, 10],
         widget_base_dimensions: [400, 225],
+        page_rows: 4,
+        page_cols: 3,
         extra_rows: 0,
         extra_cols: 0,
         min_cols: 1,
